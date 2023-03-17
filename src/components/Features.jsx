@@ -20,7 +20,7 @@ const Features = (props) => {
             description={item.description}
             title={item.title}
             background={item.background}
-            // className={index === 1 ? "abc" : ""}
+            slug={item.slug}
           ></Card>
         ))}
       </div>

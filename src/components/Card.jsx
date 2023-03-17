@@ -5,6 +5,7 @@ const Card = (props) => {
     <div className="cardItem">
       <img src={props.background} width="100%" height="100%" alt="" />
       <div className="cardItem-info">
+        <img src={props.slug} alt="" />
         <h1>{props.title}</h1>
         <p>{props.description}</p>
         <h2>Learn more</h2>
