@@ -1,12 +1,12 @@
 import React from "react";
-import "./Features.css";
+import "./Features.scss";
 import Card from "./Card";
 import { cardData } from "./data";
 
 const Features = (props) => {
   console.log(props);
   return (
-    <div className="features ">
+    <div className="features">
       <h1>Features</h1>
       <p>
         Some of the features and advantages that we provide for those of you who

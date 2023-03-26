@@ -1,11 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Sen:wght@400;700;800&display=swap");
+@mixin mobile {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
 
-p {
+@mixin laptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+.features p {
   font-family: "Sen", sans-serif;
 }
 
-h1,
-h2 {
+.features h1,
+.features h2 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -26,6 +40,11 @@ h2 {
 .cardList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @include tablet {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-bottom: 40rem;
+  }
   width: 1000px;
   height: 800px;
   grid-column-gap: 2rem;
@@ -37,6 +56,9 @@ h2 {
   position: relative;
   width: 410px;
   height: 310px;
+  @include tablet {
+    margin-bottom: 3rem;
+  }
 }
 
 .cardItem-info {
@@ -80,6 +102,6 @@ h2 {
   object-fit: cover;
 }
 
-i {
+.features i {
   color: #9c69e2;
 }
