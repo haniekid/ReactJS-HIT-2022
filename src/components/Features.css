@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Sen:wght@400;700;800&display=swap");
+
+p {
+  font-family: "Sen", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features > p {
+  max-width: 38rem;
+  text-align: center;
+  color: #4b5d68;
+  line-height: 1.5rem;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+  height: 800px;
+  grid-column-gap: 2rem;
+  grid-row-gap: 0rem;
+  margin-top: 4rem;
+}
+
+.cardItem {
+  position: relative;
+  width: 410px;
+  height: 310px;
+}
+
+.cardItem-info {
+  position: absolute;
+  top: 36px;
+  left: 29%;
+  right: 10%;
+}
+
+.cardItem-info h1 {
+  font-size: 1.3rem;
+}
+
+.cardItem-info p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #4b5d68;
+  line-height: 1.4rem;
+  height: 140px;
+}
+
+.cardItem-info h2 {
+  font-size: 1rem;
+}
+
+.cardItem-info img {
+  position: absolute;
+}
+
+.cardItem-img {
+  position: absolute;
+  top: 33%;
+  left: -80px;
+  width: 180px;
+  height: 150px;
+}
+
+.cardItem-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+i {
+  color: #9c69e2;
+}
