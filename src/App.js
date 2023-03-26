@@ -1,20 +1,17 @@
-<<<<<<< HEAD
-import "./App.css";
-
-function App() {
-  return <div className="App"></div>;
-=======
 import Features from "./components/Features";
-import Toggle from "./components/Toggle";
+import Home from "./components/Home";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
+      <Home />
       <Features />
-      <Toggle />
+      <Testimonials />
+      <Footer />
     </div>
   );
->>>>>>> acf5bafa676c4d859b09d4d937affdcfebcdb3ef
 }
 
 export default App;
