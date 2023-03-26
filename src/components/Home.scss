@@ -5,12 +5,12 @@
 }
 
 @mixin mobile {
-  @media (min-width: 375px) {
+  @media (max-width: 600px) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     @content;
   }
 }
@@ -54,6 +54,9 @@ $purple-color: #9c69e2;
       color: #212353;
       max-width: 60%;
       @include tablet {
+        max-width: 100%;
+      }
+      @include mobile {
         max-width: 100%;
       }
     }
