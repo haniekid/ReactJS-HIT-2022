@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactJS-HIT-2022/static/css/main.9f285252.css",
+    "main.css": "/ReactJS-HIT-2022/static/css/main.b643c1d1.css",
     "main.js": "/ReactJS-HIT-2022/static/js/main.9ca5c18b.js",
     "static/js/787.28cb0dcd.chunk.js": "/ReactJS-HIT-2022/static/js/787.28cb0dcd.chunk.js",
     "static/media/image.png": "/ReactJS-HIT-2022/static/media/image.1b4c23f21ef70ebb4a81.png",
@@ -9,12 +9,12 @@
     "static/media/image_1.png": "/ReactJS-HIT-2022/static/media/image_1.0ae5e6fc9573eee88d51.png",
     "static/media/image_2.png": "/ReactJS-HIT-2022/static/media/image_2.040cc0fddc74d1423a2a.png",
     "index.html": "/ReactJS-HIT-2022/index.html",
-    "main.9f285252.css.map": "/ReactJS-HIT-2022/static/css/main.9f285252.css.map",
+    "main.b643c1d1.css.map": "/ReactJS-HIT-2022/static/css/main.b643c1d1.css.map",
     "main.9ca5c18b.js.map": "/ReactJS-HIT-2022/static/js/main.9ca5c18b.js.map",
     "787.28cb0dcd.chunk.js.map": "/ReactJS-HIT-2022/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f285252.css",
+    "static/css/main.b643c1d1.css",
     "static/js/main.9ca5c18b.js"
   ]
 }
