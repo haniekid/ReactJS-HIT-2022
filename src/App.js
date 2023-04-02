@@ -1,14 +1,18 @@
-// import "./App.css";
-import TestScss from "./components/scss/TestScss.jsx";
-import Button from "./components/css-module/Button";
-import Button2 from "./components/css-module/Button2";
+import "./App.css";
+import Toggle from "./components/Toggle.jsx";
+import { useState } from "react";
 
 function App() {
+  const [on, setOn] = useState(false);
+  const handleToggle = () => {
+    setOn((on) => !on);
+  };
   return (
     <div className="App">
-      {/* <TestScss /> */}
-      {/* <Button /> */}
-      <Button2 />
+      <button onClick={handleToggle} style={{ margin: "5rem" }}>
+        {on ? "Nhấn để ẩn toggle" : "Nhấn để hiện toggle"}
+      </button>
+      {on && <Toggle />}
     </div>
   );
 }
