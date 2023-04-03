@@ -3,38 +3,47 @@ import { useEffect, useState, useRef } from "react";
 const Toggle = () => {
   const [title, setTitle] = useState();
   const [count, setCount] = useState(0);
+  const [posts, setPosts] = useState([]);
 
   const ref = useRef();
-  useEffect(() => {
-    console.log("Toggle affter re-render");
+  // useEffect(() => {
+  //   console.log("Toggle affter re-render");
 
-    // componentWillUnmount
-    return () => {
-      console.log("Toggle is going to unmount or re-render");
-    };
-  });
+  //   // componentWillUnmount
+  //   return () => {
+  //     console.log("Toggle just before unmount or re-render");
+  //   };
+  // });
 
   useEffect(() => {
     // componentDidMount
-    console.log("Toggle affter mounting");
-    console.log(ref);
+    // console.log("Toggle affter mounting");
+    // console.log(ref);
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      
+      .then((posts) => {
+        setPosts(posts);
+        console.log(posts);
+      });
+    
     // componentWillUnmount
-    return () => {
-      console.log("Toggle just before unmount 2");
-    };
+    // return () => {
+    //   console.log("Toggle just before unmount 2");
+    // };
   }, []);
 
-  useEffect(() => {
-    // componentDidUpdate
-    console.log("re-render");
-    // setTitle("Hello Thu Ha");
-    // console.log();
+  // useEffect(() => {
+  //   // componentDidUpdate
+  //   console.log("re-render");
+  //   // setTitle("Hello Thu Ha");
+  //   // console.log();
 
-    // componentWillUnmount
-    return () => {
-      console.log("Toggle just before unmount 3");
-    };
-  }, [title]); // chỉ lắng nghe sự thay đổi của state title thì gọi hàm
+  //   // componentWillUnmount
+  //   return () => {
+  //     console.log("Toggle just before unmount 3");
+  //   };
+  // }, [title]); // chỉ lắng nghe sự thay đổi của state title thì gọi hàm
 
   const handleClick = () => {
     setTitle((title) => title);
