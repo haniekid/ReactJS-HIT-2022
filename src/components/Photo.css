@@ -1,0 +1,15 @@
+.listPhotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.listPhotos img {
+  border-radius: 0.5rem;
+}
+button {
+  background-color: blue;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+}

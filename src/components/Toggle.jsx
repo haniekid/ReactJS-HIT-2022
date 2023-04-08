@@ -1,4 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+// LESSON 4 + 5
+
+import { useEffect, useState, useRef, useEffectLayout } from "react";
 
 const Toggle = () => {
   const [title, setTitle] = useState();
@@ -15,23 +17,23 @@ const Toggle = () => {
   //   };
   // });
 
-  useEffect(() => {
-    // componentDidMount
-    // console.log("Toggle affter mounting");
-    // console.log(ref);
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      
-      .then((posts) => {
-        setPosts(posts);
-        console.log(posts);
-      });
-    
-    // componentWillUnmount
-    // return () => {
-    //   console.log("Toggle just before unmount 2");
-    // };
-  }, []);
+  // useEffect(() => {
+  //   // componentDidMount
+  //   // console.log("Toggle affter mounting");
+  //   // console.log(ref);
+  //   fetch("https://jsonplaceholder.typicode.com/posts")
+  //     .then((res) => res.json())
+
+  //     .then((posts) => {
+  //       setPosts(posts);
+  //       console.log(posts);
+  //     });
+
+  //   // componentWillUnmount
+  //   // return () => {
+  //   //   console.log("Toggle just before unmount 2");
+  //   // };
+  // }, []);
 
   // useEffect(() => {
   //   // componentDidUpdate
@@ -49,12 +51,35 @@ const Toggle = () => {
     setTitle((title) => title);
     setCount((count) => ++count);
   };
+
+  // const [count1, setCount1] = useState(0);
+  // const handleCount = () => {
+  //   setCount1((count1) => ++count1);
+  // };
+  // useEffectLayout(() => {
+  //   if (count1 > 3) {
+  //     setCount1(0);
+  //   }
+  // }, [count1]);
+
   return (
     <div>
-      {/* <button onClick={() => setTitle("Trinh Thu Ha")}>Title: {title}</button> */}
+      <button onClick={() => setTitle("Trinh Thu Ha")}>Title: {title}</button>
       <button onClick={handleClick}>
         Title: {title} Count: {count}
       </button>
+
+      {/* <div onClick={handleCount}>{count1}</div> */}
+      {/* <div>
+        {posts &&
+          posts.map((post, index) => (
+            <div key={post.id}>
+              <p>TITLE: {post.title}</p>
+              <p>USERID: {post.userId}</p>
+              <p>BODY: {post.body}</p>
+            </div>
+          ))}
+      </div> */}
     </div>
   );
 };

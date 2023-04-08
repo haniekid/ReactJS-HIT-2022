@@ -1,4 +1,5 @@
 import "./App.css";
+import Photo from "./components/Photo";
 import Toggle from "./components/Toggle.jsx";
 import { useState } from "react";
 
@@ -9,10 +10,11 @@ function App() {
   };
   return (
     <div className="App">
-      <button onClick={handleToggle} style={{ margin: "5rem" }}>
+      {/* <button onClick={handleToggle} style={{ margin: "5rem" }}>
         {on ? "Nhấn để ẩn toggle" : "Nhấn để hiện toggle"}
       </button>
-      {on && <Toggle />}
+      {on && <Toggle />} */}
+      <Photo />
     </div>
   );
 }
