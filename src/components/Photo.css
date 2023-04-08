@@ -4,9 +4,17 @@
   grid-gap: 2rem;
   padding: 2rem;
 }
-
+.listPhotos div {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #ebf0f8;
+}
 .listPhotos img {
   border-radius: 0.5rem;
+  /* padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #bdd2f2; */
 }
 button {
   background-color: blue;
