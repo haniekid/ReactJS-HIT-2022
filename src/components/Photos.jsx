@@ -29,6 +29,7 @@ const Photos = () => {
       setLoading2((loading2) => false);
     };
   }, []);
+
   const handleLoadMorePhotos = async () => {
     try {
       const loadMorePhotos = await getPhotos(page);
