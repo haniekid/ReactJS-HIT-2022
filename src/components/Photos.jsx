@@ -23,10 +23,10 @@ const Photos = () => {
     }
   };
 
-  // window.onload = function () {
-  //   console.log("Page loaded");
-  //   setLoading((loading2) => false);
-  // };
+  window.onload = function () {
+    console.log("Page loaded");
+    setLoading2((loading2) => false);
+  };
 
   const handleLoadMorePhotos = async () => {
     try {
