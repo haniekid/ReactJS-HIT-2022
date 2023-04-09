@@ -28,6 +28,12 @@ const Photos = () => {
       console.log("Page loaded");
       setLoading2((loading2) => false);
     };
+
+    // cleanup function
+    return () => {
+      window.onload = null;
+      console.log("unmounting...");
+    };
   }, []);
 
   const handleLoadMorePhotos = async () => {
