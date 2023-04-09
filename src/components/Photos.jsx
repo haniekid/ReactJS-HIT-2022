@@ -23,11 +23,12 @@ const Photos = () => {
     }
   };
 
-  window.onload = function () {
-    console.log("Page loaded");
-    setLoading2((loading2) => false);
-  };
-
+  useEffect(() => {
+    window.onload = function () {
+      console.log("Page loaded");
+      setLoading2((loading2) => false);
+    };
+  }, []);
   const handleLoadMorePhotos = async () => {
     try {
       const loadMorePhotos = await getPhotos(page);
@@ -55,7 +56,7 @@ const Photos = () => {
         ""
       )}
 
-      {/* {loading2 ? (
+      {loading2 ? (
         <Button variant="primary" disabled>
           <Spinner
             as="span"
@@ -68,7 +69,7 @@ const Photos = () => {
         </Button>
       ) : (
         " "
-      )} */}
+      )}
 
       <div className="listPhotos">
         {photos.length > 0
