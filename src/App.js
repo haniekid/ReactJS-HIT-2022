@@ -1,11 +1,11 @@
 import "./App.css";
-import Photo from "./components/Photo";
+import Photos from "./components/Photos";
 import { useState } from "react";
 
 function App() {
   return (
     <div className="App">
-      <Photo />
+      <Photos />
     </div>
   );
 }
