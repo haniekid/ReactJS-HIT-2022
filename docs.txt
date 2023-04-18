@@ -6,5 +6,3 @@ npx tailwindcss init
 npm i styled-components
 
 npm i sass
-
-
