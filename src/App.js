@@ -1,14 +1,10 @@
-// import "./App.css";
-import TestScss from "./components/scss/TestScss.jsx";
-import Button from "./components/css-module/Button";
-import Button2 from "./components/css-module/Button2";
+import "./App.css";
+import TodoApp from "./components/TodoApp";
 
 function App() {
   return (
     <div className="App">
-      {/* <TestScss /> */}
-      {/* <Button /> */}
-      <Button2 />
+      <TodoApp />
     </div>
   );
 }
