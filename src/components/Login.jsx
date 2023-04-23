@@ -13,12 +13,11 @@ const Login = () => {
         }}
         validationSchema={Yup.object({
           email: Yup.string().required("Field is required!").email(),
-          password: Yup.string()
-            .required("Field is required!")
-            .matches(
-              /^(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{6,}$/,
-              "The password or email entered is incorrect!"
-            ),
+          password: Yup.string().required("Field is required!"),
+          // .matches(
+          //   /^(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{6,}$/,
+          //   "The password entered is incorrect!"
+          // ),
         })}
         onSubmit={async (userData) => {
           try {
