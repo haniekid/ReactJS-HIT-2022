@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
-const SignupForm = () => {
+const Login = () => {
   return (
     <div>
       <Formik
@@ -17,7 +17,7 @@ const SignupForm = () => {
             .required("Field is required!")
             .matches(
               /^(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{6,}$/,
-              "Password must be at least 6 characters long and contain at least one letter and one digit!"
+              "The password or email entered is incorrect!"
             ),
         })}
         onSubmit={async (userData) => {
@@ -26,8 +26,7 @@ const SignupForm = () => {
               "https://reqres.in/api/login",
               userData
             );
-            console.log(response);
-            alert("Registration successful 🙌");
+            alert("Logged in successfully 🙌");
           } catch (error) {
             console.error(error);
             if (
@@ -37,13 +36,13 @@ const SignupForm = () => {
             ) {
               alert(error.response.data.error);
             } else {
-              alert("Registration failed 😢");
+              alert("Login failed. 😢");
             }
           }
         }}
       >
         <Form className="form">
-          <h1>Register</h1>
+          <h1>Login</h1>
           <div className="field">
             <label htmlFor="email">Email</label>
             <Field
@@ -69,9 +68,7 @@ const SignupForm = () => {
             </div>
           </div>
           <div>
-            <button className="w-full p-4 bg-blue-600 text-white font-semibold rounded-lg">
-              Submit
-            </button>
+            <button>Submit</button>
           </div>
         </Form>
       </Formik>
@@ -79,4 +76,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default Login;

@@ -1,9 +1,9 @@
-import SignupForm from "./components/SignupForm.jsx";
+import Login from "./components/Login.jsx";
 import "./App.css";
 function App() {
   return (
     <div className="App">
-      <SignupForm />
+      <Login />
     </div>
   );
 }
