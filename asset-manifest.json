@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactJS-HIT-2022/static/css/main.66eeafa2.css",
-    "main.js": "/ReactJS-HIT-2022/static/js/main.d36d02ac.js",
-    "static/js/787.28cb0dcd.chunk.js": "/ReactJS-HIT-2022/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/ReactJS-HIT-2022/index.html",
-    "main.66eeafa2.css.map": "/ReactJS-HIT-2022/static/css/main.66eeafa2.css.map",
-    "main.d36d02ac.js.map": "/ReactJS-HIT-2022/static/js/main.d36d02ac.js.map",
-    "787.28cb0dcd.chunk.js.map": "/ReactJS-HIT-2022/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/reactjs-class-hitclub/static/css/main.e0ca2591.css",
+    "main.js": "/reactjs-class-hitclub/static/js/main.f52d1a59.js",
+    "static/js/787.28cb0dcd.chunk.js": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/reactjs-class-hitclub/index.html",
+    "main.e0ca2591.css.map": "/reactjs-class-hitclub/static/css/main.e0ca2591.css.map",
+    "main.f52d1a59.js.map": "/reactjs-class-hitclub/static/js/main.f52d1a59.js.map",
+    "787.28cb0dcd.chunk.js.map": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66eeafa2.css",
-    "static/js/main.d36d02ac.js"
+    "static/css/main.e0ca2591.css",
+    "static/js/main.f52d1a59.js"
   ]
 }
