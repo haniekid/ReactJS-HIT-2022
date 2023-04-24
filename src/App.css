@@ -3,53 +3,20 @@
   font-family: "Sen", sans-serif;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: green;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-.form {
-  width: 20rem;
-  margin: 10rem auto;
-  border: 2px solid green;
-  padding: 3rem 2rem;
-  border-radius: 1rem;
-}
-
-label {
-  font-size: 1rem;
-  margin-bottom: -1rem;
-  color: green;
-}
-.field {
+.navbar {
+  width: 50%;
+  margin: 1rem auto;
+  font-size: 1.3rem;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 1rem;
+  justify-content: space-around;
 }
 
-.input {
-  padding: 0.7rem 1rem;
-  border: 1px solid green;
-  border-radius: 0.5rem;
-}
-
-button {
-  width: 100%;
-  padding: 0.8rem 1.1rem;
-  background: linear-gradient(rgb(84, 104, 53), rgb(130, 209, 12));
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.error {
+.isActive {
   color: red;
-  margin-top: -1.5rem;
-  font-size: 0.9rem;
+}
+
+.signup {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(rgb(84, 104, 53), rgb(130, 209, 12));
+  border-radius: 1rem;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import "./Login.css";
 
 const Login = () => {
   return (
@@ -25,6 +26,7 @@ const Login = () => {
               "https://reqres.in/api/login",
               userData
             );
+            console.log(response);
             alert("Logged in successfully 🙌");
           } catch (error) {
             console.error(error);
@@ -67,7 +69,7 @@ const Login = () => {
             </div>
           </div>
           <div>
-            <button>Submit</button>
+            <button className="button">Submit</button>
           </div>
         </Form>
       </Formik>
