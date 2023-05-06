@@ -19,7 +19,7 @@ const linkList = [
   },
 ];
 
-const Navbar = () => {
+const Layout = () => {
   const handleActiveLink = ({ isActive }) => {
     return isActive ? "isActive" : "";
   };
@@ -38,4 +38,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Layout;
+// token
