@@ -26,7 +26,7 @@ const SignIn = () => {
           alert("User does not exist!!");
         } else {
           alert("Logged in successfully 🙌");
-          navigate("reactjs-class-hitclub/home-sign-in");
+          navigate("/reactjs-class-hitclub/home-sign-in");
         }
       } catch (error) {
         console.error(error);

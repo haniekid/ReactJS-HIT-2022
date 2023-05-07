@@ -9,7 +9,7 @@ import "./Partial.scss";
 const NavbarNotSignIn = () => {
   const navigate = useNavigate();
   const handleSignIn = () => {
-    navigate("reactjs-class-hitclub/signin");
+    navigate("/reactjs-class-hitclub/signin");
   };
   return (
     <div>

@@ -8,7 +8,7 @@ import "./Partial.scss";
 const NavbarSignIn = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
-    navigate("reactjs-class-hitclub/");
+    navigate("/reactjs-class-hitclub/");
   };
   return (
     <header className="navbar">
