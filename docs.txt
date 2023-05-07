@@ -1,8 +1,0 @@
-
-https://tailwindcss.com/docs/installation
-npm install -D tailwindcss
-npx tailwindcss init
-
-npm i styled-components
-
-npm i sass
