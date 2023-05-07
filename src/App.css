@@ -1,22 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap");
-* {
-  font-family: "Sen", sans-serif;
+body {
+  max-width: 100vw;
+  font-size: 100%;
+}
+header,
+footer,
+section {
+  margin: 2rem 12%;
 }
 
-.navbar {
-  width: 50%;
-  margin: 1rem auto;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: space-around;
+body {
+  border: none;
+  outline: none;
+}
+.home p,
+.testimonials p {
+  color: #4b5d68;
 }
 
-.isActive {
-  color: red;
-}
-
-.signup {
-  padding: 0.5rem 1rem;
-  background: linear-gradient(rgb(84, 104, 53), rgb(130, 209, 12));
-  border-radius: 1rem;
+.testimonials {
+  background-color: #9c69e2;
+  border-radius: 50px;
 }

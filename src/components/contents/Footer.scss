@@ -1,0 +1,102 @@
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+.footer {
+  font-family: "Sen", sans-serif;
+  margin-top: 5rem;
+}
+
+hr {
+  background: #9c69e2;
+  opacity: 0.2;
+}
+.footer .info {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer h1 {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #212353;
+}
+.footer .card_1 {
+  width: 37%;
+  @include mobile {
+    width: 100%;
+  }
+  img {
+    margin-right: 0.6rem;
+  }
+  h5 {
+    max-width: 16rem;
+    text-align: start;
+    line-height: 1.8rem;
+  }
+  p {
+    max-width: 16rem;
+    line-height: 1.8rem;
+  }
+}
+
+.footer .card_2,
+.footer .card_3 {
+  width: 20%;
+  @include mobile {
+    width: 50%;
+  }
+  p {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  // @include mobile {
+  //   text-align: center;
+  // }
+}
+.footer .card_4 img {
+  margin-right: 0.6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact p {
+  max-width: 30%;
+  color: #4a4b68 !important;
+  font-size: 0.8rem;
+}
+
+.contact div {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100rem;
+  background-color: #e8e5e5;
+  position: relative;
+}
+
+.contact div img {
+  position: absolute;
+  width: 50%;
+  height: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

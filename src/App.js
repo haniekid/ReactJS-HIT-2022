@@ -1,20 +1,17 @@
-import Login from "./components/Login.jsx";
 import { Route, Routes } from "react-router";
-import Content from "./components/Content.jsx";
-import Layout from "./components/Layout.jsx";
-import Home from "./components/Home.jsx";
 import "./App.css";
+
+import HomeNotSignIn from "./components/HomeNotSignIn.jsx";
+import SignIn from "./components/SignIn.jsx";
+import HomeSignIn from "./components/HomeSignIn";
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" index element={<Home />}></Route>
-          <Route path="/about" element={<div>about</div>}></Route>
-          <Route path="/content" element={<Content />}></Route>
-          <Route path="*" element={<div>not found 404</div>}></Route>
-        </Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/" element={<HomeNotSignIn />} />
+        <Route path="/home-sign-in" element={<HomeSignIn />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="*" element={<h1>not found 404 !!!</h1>}></Route>
       </Routes>
     </div>
   );
