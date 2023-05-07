@@ -21,19 +21,15 @@ const SignIn = () => {
           "https://test-react.agiletech.vn/auth/login",
           userData
         );
-        // alert("Logged in successfully 🙌");
-        navigate("/home-sign-in");
+        console.log(response.data.code);
+        if (response.data.code === 401) {
+          alert("User does not exist!!");
+        } else {
+          alert("Logged in successfully 🙌");
+          navigate("/home-sign-in");
+        }
       } catch (error) {
         console.error(error);
-        if (
-          error.response &&
-          error.response.data &&
-          error.response.data.error
-        ) {
-          alert(error.response.data.error);
-        } else {
-          alert("Login failed. 😢");
-        }
       }
     },
   });
