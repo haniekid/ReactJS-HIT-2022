@@ -1,17 +1,17 @@
 import React from "react";
 
-import NavbarNotSignIn from "./contents/NavbarNotSignIn";
+import Navbar from "./contents/Navbar";
 import Features from "./contents/Features";
 import Footer from "./contents/Footer";
 
-const HomeNotSignIn = () => {
+const Home = () => {
   return (
     <div>
-      <NavbarNotSignIn />
+      <Navbar />
       <Features />
       <Footer />
     </div>
   );
 };
 
-export default HomeNotSignIn;
+export default Home;
