@@ -8,10 +8,12 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomeNotSignIn />} />
-        <Route path="/home-sign-in" element={<HomeSignIn />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="*" element={<h1>not found 404 !!!</h1>}></Route>
+        <Route path="reactjs-class-hitclub/" element={<HomeNotSignIn />} />
+        <Route
+          path="reactjs-class-hitclub/home-sign-in"
+          element={<HomeSignIn />}
+        />
+        <Route path="reactjs-class-hitclub/signin" element={<SignIn />} />
       </Routes>
     </div>
   );
