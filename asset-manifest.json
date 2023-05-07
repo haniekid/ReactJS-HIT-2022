@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a5a532f.css",
-    "main.js": "/static/js/main.d5b9229a.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/index.html",
-    "main.5a5a532f.css.map": "/static/css/main.5a5a532f.css.map",
-    "main.d5b9229a.js.map": "/static/js/main.d5b9229a.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/reactjs-class-hitclub/static/css/main.75d1ebe1.css",
+    "main.js": "/reactjs-class-hitclub/static/js/main.4c3bebe1.js",
+    "static/js/787.28cb0dcd.chunk.js": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js",
+    "static/media/image.png": "/reactjs-class-hitclub/static/media/image.1b4c23f21ef70ebb4a81.png",
+    "static/media/image_3.png": "/reactjs-class-hitclub/static/media/image_3.7e4cb2fde0ee81435c9e.png",
+    "static/media/image_4.png": "/reactjs-class-hitclub/static/media/image_4.7c51911e32d51ad3bf65.png",
+    "static/media/image_1.png": "/reactjs-class-hitclub/static/media/image_1.0ae5e6fc9573eee88d51.png",
+    "static/media/image_2.png": "/reactjs-class-hitclub/static/media/image_2.040cc0fddc74d1423a2a.png",
+    "index.html": "/reactjs-class-hitclub/index.html",
+    "main.75d1ebe1.css.map": "/reactjs-class-hitclub/static/css/main.75d1ebe1.css.map",
+    "main.4c3bebe1.js.map": "/reactjs-class-hitclub/static/js/main.4c3bebe1.js.map",
+    "787.28cb0dcd.chunk.js.map": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a5a532f.css",
-    "static/js/main.d5b9229a.js"
+    "static/css/main.75d1ebe1.css",
+    "static/js/main.4c3bebe1.js"
   ]
 }
