@@ -1,22 +1,19 @@
-import Login from "./components/Login.jsx";
 import { Route, Routes } from "react-router";
-import Content from "./components/Content.jsx";
-import Layout from "./components/Layout.jsx";
-import Home from "./components/Home.jsx";
+import Parent from "./components/Parent.jsx";
+import store from "./context/store";
+import userData from "./components/mock.json";
 import "./App.css";
+
 function App() {
+  const { UserContext } = store;
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" index element={<Home />}></Route>
-          <Route path="/about" element={<div>about</div>}></Route>
-          <Route path="/content" element={<Content />}></Route>
-          <Route path="*" element={<div>not found 404</div>}></Route>
-        </Route>
-        <Route path="/login" element={<Login />}></Route>
-      </Routes>
-    </div>
+    <UserContext.Provider value={userData}>
+      <div className="App" style={{ width: "800px", margin: "3rem auto" }}>
+        <Routes>
+          <Route path="/" element={<Parent />} />
+        </Routes>
+      </div>
+    </UserContext.Provider>
   );
 }
 
