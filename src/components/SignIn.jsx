@@ -28,9 +28,7 @@ const SignIn = () => {
         if (response.data.code === 401) {
           alert("User does not exist!!");
         } else {
-          // localStorage.setItem("isAuthenticated", "true");
           const accessToken = response.data.accessToken;
-          console.log(accessToken);
           localStorage.setItem("accessToken", accessToken);
           alert("Logged in successfully 🙌");
           navigate("/reactjs-class-hitclub/");
