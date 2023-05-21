@@ -1,23 +1,24 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import vector1 from "../../assets/buoi3/home/Vetor_2.png";
 import vector2 from "../../assets/buoi3/home/Vector_1.png";
 import "./Partial.scss";
 
 const Navbar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    JSON.parse(localStorage.getItem("isAuthenticated"))
-  );
   const navigate = useNavigate();
+  const accessToken = localStorage.getItem("accessToken");
+
   const handleSignIn = () => {
     navigate("/reactjs-class-hitclub/signin");
   };
 
   const handleLogout = () => {
-    localStorage.setItem("isAuthenticated", "false");
-    setIsAuthenticated(false);
     navigate("/reactjs-class-hitclub/");
+    localStorage.clear();
+  };
+
+  const handleProfile = () => {
+    navigate("/reactjs-class-hitclub/profile");
   };
 
   return (
@@ -28,9 +29,9 @@ const Navbar = () => {
           <img src={vector2} alt="" />
         </div>
 
-        {Boolean(isAuthenticated) ? (
+        {Boolean(accessToken) ? (
           <div className="navbar-right">
-            <button>Profiles</button>
+            <button onClick={handleProfile}>Profiles</button>
             <button onClick={handleLogout}>Log out</button>
           </div>
         ) : (

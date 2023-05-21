@@ -8,10 +8,9 @@ import vector2 from "../assets/buoi3/home/Vector_1.png";
 import "./SignIn.css";
 import "./contents/Partial.scss";
 
-// import UserContext from "../App";
-
 const SignIn = () => {
   const navigate = useNavigate();
+
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -29,7 +28,10 @@ const SignIn = () => {
         if (response.data.code === 401) {
           alert("User does not exist!!");
         } else {
-          localStorage.setItem("isAuthenticated", "true");
+          // localStorage.setItem("isAuthenticated", "true");
+          const accessToken = response.data.accessToken;
+          console.log(accessToken);
+          localStorage.setItem("accessToken", accessToken);
           alert("Logged in successfully 🙌");
           navigate("/reactjs-class-hitclub/");
         }

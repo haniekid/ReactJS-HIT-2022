@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { cardData } from ".././data";
+import { cardData } from "../../assets/data";
 
 import home from "../../assets/buoi3/home/image.png";
 
