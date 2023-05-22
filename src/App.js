@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router";
+import React from "react";
+import { useSelector } from "react-redux";
 
+import Counter from "./components/redux/Counter";
 import "./App.css";
-import Home from "./components/Home";
-import SignIn from "./components/SignIn";
-import Profile from "./components/Profile";
+
 function App() {
+  const { count } = useSelector((state) => state.counter);
   return (
     <div className="App">
-      <Routes>
-        <Route path="reactjs-class-hitclub/" element={<Home />} />
-        <Route path="reactjs-class-hitclub/signin" element={<SignIn />} />
-        <Route path="reactjs-class-hitclub/profile" element={<Profile />} />
-      </Routes>
+      {/* <Home /> */}
+
+      <h1 className="text-center">THE COUNT FROM APP IS: {count}</h1>
+      <Counter />
     </div>
   );
 }
