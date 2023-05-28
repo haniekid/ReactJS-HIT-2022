@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/reactjs-class-hitclub/static/css/main.3609509d.css",
-    "main.js": "/reactjs-class-hitclub/static/js/main.49d9e889.js",
+    "main.css": "/reactjs-class-hitclub/static/css/main.3acbdb3a.css",
+    "main.js": "/reactjs-class-hitclub/static/js/main.cf08f711.js",
     "static/js/787.28cb0dcd.chunk.js": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js",
-    "static/media/image.png": "/reactjs-class-hitclub/static/media/image.1b4c23f21ef70ebb4a81.png",
-    "static/media/image_3.png": "/reactjs-class-hitclub/static/media/image_3.7e4cb2fde0ee81435c9e.png",
-    "static/media/image_4.png": "/reactjs-class-hitclub/static/media/image_4.7c51911e32d51ad3bf65.png",
-    "static/media/image_1.png": "/reactjs-class-hitclub/static/media/image_1.0ae5e6fc9573eee88d51.png",
-    "static/media/image_2.png": "/reactjs-class-hitclub/static/media/image_2.040cc0fddc74d1423a2a.png",
     "index.html": "/reactjs-class-hitclub/index.html",
-    "main.3609509d.css.map": "/reactjs-class-hitclub/static/css/main.3609509d.css.map",
-    "main.49d9e889.js.map": "/reactjs-class-hitclub/static/js/main.49d9e889.js.map",
+    "main.3acbdb3a.css.map": "/reactjs-class-hitclub/static/css/main.3acbdb3a.css.map",
+    "main.cf08f711.js.map": "/reactjs-class-hitclub/static/js/main.cf08f711.js.map",
     "787.28cb0dcd.chunk.js.map": "/reactjs-class-hitclub/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3609509d.css",
-    "static/js/main.49d9e889.js"
+    "static/css/main.3acbdb3a.css",
+    "static/js/main.cf08f711.js"
   ]
 }
