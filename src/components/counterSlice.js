@@ -1,37 +1,22 @@
-// Action types
-const INCREMENT = "increment";
-const DECREMENT = "decrement";
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  count: 0,
-};
-
-// Action creators
-export const increment = () => ({
-  type: INCREMENT,
+const counterSlice = createSlice({
+  name: "counter",
+  initialState: {
+    count: 0,
+  },
+  reducers: {
+    increment: (state) => ({
+      ...state,
+      count: state.count + 1,
+    }),
+    decrement: (state) => ({
+      ...state,
+      count: state.count - 1,
+    }),
+  },
 });
 
-export const decrement = () => ({
-  type: DECREMENT,
-});
+export const { increment, decrement } = counterSlice.actions;
 
-function counterReducer(state = initialState, action) {
-  switch (action.type) {
-    case INCREMENT:
-      return {
-        ...state,
-        count: state.count + 1,
-      };
-    case DECREMENT:
-      return {
-        ...state,
-        count: state.count - 1,
-      };
-
-    // add new case for decrement
-    default:
-      return state;
-  }
-}
-
-export default counterReducer;
+export default counterSlice.reducer;

@@ -1,8 +1,12 @@
-import { createStore, combineReducers } from "redux";
-import counterReducer from "./counterSlice";
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import counterSlice from "./counterSlice";
 
 const reducer = combineReducers({
-  counter: counterReducer,
+  counter1: counterSlice,
 });
-const store = createStore(reducer); // tạo kho trạng thái
+
+const store = configureStore({
+  reducer,
+});
+
 export default store;
